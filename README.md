@@ -27,8 +27,8 @@
 
 **Clone repository**
 
-`git clone https://github.com/prefixstudio/merlot my-project`
-`cd my-project`
+`git clone https://github.com/prefixstudio/merlot my-project`  
+`cd my-project`  
 `vagrant up`
 
 **Open browser**
@@ -41,8 +41,8 @@ There are 2 ways to connect to the MySQL database in Merlot
 #### PHPMyAdmin
 Visit http://192.168.33.10/phpmyadmin/
 
-Login with
-Username: root
+Login with  
+Username: root  
 Password: root
 
 An empty database called **merlot** has already been created for you
