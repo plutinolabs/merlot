@@ -64,10 +64,10 @@
 
   <div class="row head">
     <div class="col-sm  text-center">
-      <a href="https://merlotbox.com/"><img src="https://merlotbox.com/merlot.png" alt="Merlot" class="logo"></a> 
+      <a href="https://merlotbox.com/"><img src="https://merlotbox.com/merlot.png" alt="Merlot" class="logo"></a>
 
       <h2>A Simple LAMP Stack for Local Developement with Vagrant</h2>
-      <p>v 1.0.0</p>
+      <p>v 1.0.1</p>
     </div>
   </div>
 
