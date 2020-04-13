@@ -165,9 +165,9 @@
 
   <div class="col-md-6  mer_col">
     <div class="card bg-light" >
-      <div class="card-header">Open browser</div>
+      <div class="card-header">Start Developing</div>
       <div class="card-body">
-        <p class="card-text"> Visit:<br><a href="http://192.168.33.10" target="_blank">http://192.168.33.10</a> </p>
+        <p class="card-text"> Place all your files in the public folder to vew your creation</p>
       </div>
     </div>
   </div>
