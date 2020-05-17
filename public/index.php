@@ -52,6 +52,15 @@
 
   background-color:rgba(0,0,0,.05);
  }
+
+ .msettings td, .msettings th{
+   width: 50%;
+ }
+
+ .msettings{
+   margin-top:30px;
+  border: 1px solid #dee2e6;
+ }
 </style>
 
   </head>
@@ -67,7 +76,7 @@
       <a href="https://merlotbox.com/"><img src="https://merlotbox.com/merlot.png" alt="Merlot" class="logo"></a>
 
       <h2>A Simple LAMP Stack for Local Development with Vagrant</h2>
-      <p>v 1.0.1</p>
+      <p>v 2.0.0</p>
     </div>
   </div>
 
@@ -89,25 +98,27 @@
 
         <table  class="table table_mer_info table-striped table-sm">
           <tr>
-            <td>Ubuntu 18.04</td>
-            <td>Apache 2.4.29</td>
-            <td>PHP 7.4.4</td>
+            <td>Ubuntu 20.04</td>
+            <td>Apache 2.4.41</td>
+            <td>PHP 7.4.6</td>
             <td>phpMyAdmin 4.9.5</td>
           </tr>
           <tr>
-            <td>PHP Unit 6.1.4</td>
-            <td>MYSQL 5.7.29</td>
-            <td>PostreSQL 10.12</td>
+
+            <td>MYSQL 8.0.20</td>
+            <td>PostreSQL 12.2</td>
             <td>SQLITE 2.8.17</td>
+            <td>MongoDB 4.2.6</td>
           </tr>
           <tr>
-            <td>COMPOSER 1.10.5</td>
+            <td>COMPOSER 1.10.6</td>
             <td>WP-CLI 2.4.0</td>
             <td>NODEJS 12.16.2</td>
-            <td>RUBY 2.5.1</td>
+            <td>RUBY 2.7.0</td>
           </tr>
           <tr>
-            <td>REDIS 4.0.9</td>
+            <td>PHP Unit 9.1.4</td>
+            <td>REDIS 5.0.7</td>
             <td>MailHog</td>
             <td></td>
           </tr>
@@ -180,7 +191,7 @@
 <div class="row info_row">
   <div class="col-sm ">
     <h3>Accessing the database</h3>
-    <p>There are 2 ways to connect to the MySQL database in Merlot</p>
+    <p>There are 2 ways to connect to the databases in Merlot - via  web client or a desktop client</p>
   </div>
 </div>
 
@@ -189,10 +200,13 @@
 <div class="row d-flex">
   <div class="col-md-6 mer_col">
     <div class="card bg-light" >
-  <div class="card-header">PHPMyAdmin</div>
+  <div class="card-header">Via a web client</div>
   <div class="card-body">
     <p class="card-text">
-      Visit <a href="http://192.168.33.10/phpmyadmin/" target="_blank">http://192.168.33.10/phpmyadmin/</a>
+      MySQL and PostreSQL both have web clients built into Merlot.<br><br>
+
+      Visit <a href="http://192.168.33.10/phpmyadmin/" target="_blank">http://192.168.33.10/phpmyadmin/</a> for MySQL<br>
+      Visit <a href="http://192.168.33.10/phppgadmin/" target="_blank">http://192.168.33.10/phppgadmin</a> for PostreSQL
   </p>
   <p class="card-text">
     Login with<br>Username: root<br>Password: root
@@ -209,10 +223,10 @@
     <div class="card-header">Via a desktop client</div>
     <div class="card-body">
       <p class="card-text">
-        You can use an application such as Sequel Pro or MySQl Workbench to connect to your database.</p>
+You can use an application such as Sequel Pro or MySQl Workbench (for MySQL), DBeaver (for PostreSQL) or MongoDB Compass (for MongoDB) to connect to your database
       <p class="card-text">
-        Select SSH as the connect method with the following settings
-        <table class="table  table-striped table-sm">
+        Whatever you use, select SSH as the connect method with the following settings
+        <table class="table  table-striped table-sm msettings">
           <tr>
             <th>SSH Host</th>
             <td>192.168.33.10</td>
@@ -229,6 +243,9 @@
             <th>SSH Port</th>
             <td>22</td>
           </tr>
+        </table>
+
+        <table class="table  table-striped table-sm msettings">
           <tr>
             <th>MySQL Host</th>
             <td>127.0.0.1</td>
@@ -246,6 +263,43 @@
             <td>merlot</td>
           </tr>
         </table>
+
+        <table class="table  table-striped table-sm msettings">
+          <tr>
+            <th>PostreSQL Host</th>
+            <td>127.0.0.1</td>
+          </tr>
+          <tr>
+            <th>PostreSQL User</th>
+            <td>root</td>
+          </tr>
+          <tr>
+            <th>PostreSQL Password</td>
+            <td>root</td>
+          </tr>
+          <tr>
+            <th>PostreSQL Database</th>
+            <td>merlot</td>
+          </tr>
+          <tr>
+            <th>PostreSQL Port</th>
+            <td>5432</td>
+          </tr>
+        </table>
+
+        <table class="table  table-striped table-sm msettings">
+          <tr>
+            <th>MongoDB Host</th>
+            <td>127.0.0.1</td>
+          </tr>
+          <tr>
+            <th>MongoDB Port</th>
+            <td>27017</td>
+          </tr>
+
+        </table>
+
+
       </p>
     </div>
     </div>

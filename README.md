@@ -1,22 +1,23 @@
 
-# Merlot
+# Merlot (v2.0.0)
 ## A Simple LAMP Stack for Local Developement with Vagrant
 
 ### Merlot includes the following components
 
-- Ubuntu 18.04
-- Apache 2.4.29
-- PHP 7.4.4
+- Ubuntu 20.04
+- Apache 2.4.41
+- PHP 7.4.6
 - phpMyAdmin 4.9.5
-- PHP Unit 6.1.4
-- MYSQL 5.7.29
-- PostreSQL 10.12
+- PHP Unit 9.1.4
+- MYSQL 8.0.20
+- PostreSQL 12.2
+- MONGODB 4.2.6
 - SQLITE 2.8.17
-- COMPOSER 1.10.5
+- COMPOSER 1.10.6
 - WP-CLI 2.4.0
 - NODEJS 12.16.2
-- RUBY 2.5.1
-- REDIS 4.0.9
+- RUBY 2.7.0
+- REDIS 5.0.7
 - MailHog
 
 
@@ -34,12 +35,16 @@
 **Open browser**
 Visit: http://192.168.33.10 to access Merlot
 
+---------------
 
 ## Accessing the database
-There are 2 ways to connect to the MySQL database in Merlot
+There are 2 ways to connect to the databases in Merlot - via  web client or a desktop client
 
-#### PHPMyAdmin
-Visit http://192.168.33.10/phpmyadmin/
+#### Via a web client
+MySQL and PostreSQL both have web clients built into Merlot.
+
+Visit http://192.168.33.10/phpmyadmin/ for MySQL
+Visit http://192.168.33.10/phppgadmin/ for PostreSQL
 
 Login with  
 Username: root  
@@ -48,23 +53,39 @@ Password: root
 An empty database called **merlot** has already been created for you
 
 #### Via a desktop client
-You can use an application such as Sequel Pro or MySQl Workbench to connect to your database.
+You can use an application such as Sequel Pro or MySQl Workbench (for MySQL), DBeaver (for PostreSQL) or MongoDB Compass (for MongoDB) to connect to your database.
 
-Select SSH as the connect method with the following settings
+Whatever you use, select SSH as the connect method with the following settings
 
-| Setting      | Value |
+| Setting (SSH)      | Value |
 | ---------------| ------------- |
 | SSH Host       | 192.168.33.10 |  
-| SSH User       | 	vagrant      |
-| SSH Password   | 	vagrant      |
+| SSH User       | vagrant      |
+| SSH Password   | vagrant      |
 | SSH Port       | 22            |
-| MySQL Host     | 127.0.0.1     |
-| MySQL User     | root          |
-| MySQL Password | root          |
-| MySQL Database | merlot        |
+
+| Setting (MySQL)      | Value |
+| ---------------| ------------- |
+| Host     | 127.0.0.1     |
+| User     | root          |
+| Password | root          |
+| Database | merlot        |     
+
+| Setting (PostreSQL)     | Value |
+| ---------------| ------------- |
+| Host     | 127.0.0.1     |
+| User     | root          |
+| Password | root          |
+| Database | merlot        |
+| Port  | 5432        |
+
+| Setting (MongoDB)    | Value |
+| ---------------| ------------- |
+| Host     | 127.0.0.1     |
+| Port     | 27017          |
 
 
-
+---------------
 ## Accessing Mailhog
 Visit http://192.168.33.10:8025
 
