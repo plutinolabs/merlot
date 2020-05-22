@@ -19,11 +19,21 @@
   .logo{
     margin-bottom: 50px;
   }
-  .code_row{
-    display: block;
+  .code_body{
     background-color: #672b49;
-    margin: 0 auto;
-    width: 60%;
+    color: white;
+  }
+  .code_body code{
+    color: white;
+  }
+
+  .code_header{
+
+    color:  #6c757d;
+  }
+
+  .code_row{
+    background-color: #672b49;
     color: white;
   }
 
@@ -61,6 +71,29 @@
    margin-top:30px;
   border: 1px solid #dee2e6;
  }
+ .m_install{
+   margin-bottom: 20px;
+   margin-top:50px;
+ }
+
+ .m_install .card{
+   margin-top:20px;
+ }
+
+ .m_install pre{
+   margin:0;
+   padding:0;
+ }
+
+ .m_install code{
+   margin:0;
+   padding:0;
+ }
+ .m_install_head{
+   font-weight: bold;
+   color: white;
+ }
+
 </style>
 
   </head>
@@ -80,15 +113,39 @@
     </div>
   </div>
 
-  <div class="row ">
-    <div class="col-sm ">
-      <pre class="code_row"><code>
-        git clone https://github.com/prefixstudio/merlot my-project
-        cd my-project
-        vagrant up
-      </code></pre>
+  <div class="row m_install">
+
+    <div class="col-sm-12 text-center">
+      Merlot comes in 2 variations. One with Apache as the web server and one with NGINX.
+    </div>
+
+    <div class="col-xl-12 ">
+      <div class="card bg-light">
+        <div class="card-header m_install_head bg-secondary">Apache (v 2.4.41)</div>
+        <div class="card-body code_body">
+          <p class="card-text code_row">
+<pre><code>git clone https://github.com/prefixstudio/merlot my-project
+cd my-project
+vagrant up</code></pre>
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-12 ">
+    <div class="card bg-light">
+      <div class="card-header m_install_head bg-secondary">NGINX (v 1.17.10)</div>
+      <div class="card-body code_body">
+        <p class="card-text">
+<pre><code>git clone https://github.com/prefixstudio/merlot-nginx my-project
+cd my-project
+vagrant up</code></pre>
+      </p>
+      </div>
+    </div>
 
     </div>
+
   </div>
 
 
@@ -99,7 +156,7 @@
         <table  class="table table_mer_info table-striped table-sm">
           <tr>
             <td>Ubuntu 20.04</td>
-            <td>Apache 2.4.41</td>
+            <td>Apache or NGINX</td>
             <td>PHP 7.4.6</td>
             <td>phpMyAdmin 4.9.5</td>
           </tr>

@@ -2,6 +2,10 @@
 # Merlot (v2.0.0)
 ## A Simple LAMP Stack for Local Developement with Vagrant
 
+Visit https://merlotbox.com for more information.
+
+Visit https://github.com/prefixstudio/merlot-nginx for the Apache version on Merlot.
+
 ### Merlot includes the following components
 
 - Ubuntu 20.04
