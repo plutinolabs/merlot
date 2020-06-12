@@ -4,7 +4,7 @@
 
 Visit https://merlotbox.com for more information.
 
-Visit https://github.com/prefixstudio/merlot-nginx for the Apache version on Merlot.
+Visit https://github.com/prefixstudio/merlot-nginx for the NGINX version on Merlot.
 
 ### Merlot includes the following components
 
