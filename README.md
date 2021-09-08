@@ -32,7 +32,7 @@ Visit https://github.com/prefixstudio/merlot-nginx for the NGINX version on Merl
 
 **Clone repository**
 
-`git clone https://github.com/prefixstudio/merlot my-project`  
+`git clone https://github.com/plutinolabs/merlot my-project`  
 `cd my-project`  
 `vagrant up`
 
