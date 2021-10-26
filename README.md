@@ -1,27 +1,25 @@
 
-# Merlot (v2.0.0)
+# Merlot (v3.0.0)
 ## A Simple LAMP Stack for Local Developement with Vagrant
 
 Visit https://merlotbox.com for more information.
 
-Visit https://github.com/plutinolabs/merlot-nginx for the NGINX version on Merlot.
-
 ### Merlot includes the following components
 
-- Ubuntu 20.04
-- Apache 2.4.41
-- PHP 7.4.6
-- phpMyAdmin 4.9.5
-- PHP Unit 9.1.4
-- MYSQL 8.0.20
-- PostreSQL 12.2
-- MONGODB 4.2.6
+- Ubuntu 21.04
+- Apache 2.4.46
+- php 7.4.16
+- phpMyAdmin 4.9.7
+- PHP Unit 9.1.5
+- MYSQL 8.0.26
+- PostreSQL 13.4
 - SQLITE 2.8.17
-- COMPOSER 1.10.6
-- WP-CLI 2.4.0
-- NODEJS 12.16.2
-- RUBY 2.7.0
-- REDIS 5.0.7
+- COMPOSER 2.1.9
+- WP-CLI 2.5.0
+- NODEJS 14.18.1
+- YARN 1.22.15
+- RUBY 2.7.2
+- REDIS 6.0.11
 - MailHog
 
 
