@@ -109,19 +109,15 @@
       <a href="https://merlotbox.com/"><img src="https://merlotbox.com/merlot.png" alt="Merlot" class="logo"></a>
 
       <h2>A Simple LAMP Stack for Local Development with Vagrant</h2>
-      <p>v 2.0.0</p>
+      <p>v 3.0.0</p>
     </div>
   </div>
 
   <div class="row m_install">
 
-    <div class="col-sm-12 text-center">
-      Merlot comes in 2 variations. One with Apache as the web server and one with NGINX.
-    </div>
-
     <div class="col-xl-12 ">
       <div class="card bg-light">
-        <div class="card-header m_install_head bg-secondary">Apache (v 2.4.41)</div>
+        <div class="card-header m_install_head bg-secondary">To install</div>
         <div class="card-body code_body">
           <p class="card-text code_row">
 <pre><code>git clone https://github.com/prefixstudio/merlot my-project
@@ -132,19 +128,7 @@ vagrant up</code></pre>
       </div>
     </div>
 
-    <div class="col-xl-12 ">
-    <div class="card bg-light">
-      <div class="card-header m_install_head bg-secondary">NGINX (v 1.17.10)</div>
-      <div class="card-body code_body">
-        <p class="card-text">
-<pre><code>git clone https://github.com/prefixstudio/merlot-nginx my-project
-cd my-project
-vagrant up</code></pre>
-      </p>
-      </div>
-    </div>
-
-    </div>
+    
 
   </div>
 
@@ -153,29 +137,29 @@ vagrant up</code></pre>
     <div class="col-sm ">
       <h3>Merlot includes the following components</h3>
 
-        <table  class="table table_mer_info table-striped table-sm">
+      <table  class="table table_mer_info table-striped table-sm">
           <tr>
-            <td>Ubuntu 20.04</td>
-            <td>Apache or NGINX</td>
-            <td>PHP 7.4.6</td>
-            <td>phpMyAdmin 4.9.5</td>
+            <td>Ubuntu 21.04</td>
+            <td>Apache 2.4.46</td>
+            <td>PHP 7.4.16</td>
+            <td>phpMyAdmin 4.9.7</td>
           </tr>
           <tr>
 
-            <td>MYSQL 8.0.20</td>
-            <td>PostreSQL 12.2</td>
+            <td>MYSQL 8.0.26</td>
+            <td>PostreSQL 13.4</td>
             <td>SQLITE 2.8.17</td>
             <td>MongoDB 4.2.6</td>
           </tr>
           <tr>
-            <td>COMPOSER 1.10.6</td>
-            <td>WP-CLI 2.4.0</td>
-            <td>NODEJS 12.16.2</td>
-            <td>RUBY 2.7.0</td>
+            <td>COMPOSER 2.1.9</td>
+            <td>WP-CLI 2.5.0</td>
+            <td>NODEJS 14.18.1</td>
+            <td>RUBY 2.7.2</td>
           </tr>
           <tr>
-            <td>PHP Unit 9.1.4</td>
-            <td>REDIS 5.0.7</td>
+            <td>PHP Unit 9.1.5</td>
+            <td>REDIS 6.0.11</td>
             <td>MailHog</td>
             <td></td>
           </tr>
