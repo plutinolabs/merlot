@@ -1,25 +1,25 @@
 
-# Merlot (v3.0.0)
+# Merlot (v4.0.0)
 ## A Simple LAMP Stack for Local Developement with Vagrant
 
 Visit https://merlotbox.com for more information.
 
 ### Merlot includes the following components
 
-- Ubuntu 21.04
-- Apache 2.4.46
-- php 7.4.16
-- phpMyAdmin 4.9.7
-- PHP Unit 9.1.5
-- MYSQL 8.0.26
-- PostreSQL 13.4
-- SQLITE 2.8.17
-- COMPOSER 2.1.9
-- WP-CLI 2.5.0
-- NODEJS 14.18.1
-- YARN 1.22.15
-- RUBY 2.7.2
-- REDIS 6.0.11
+- Ubuntu 22.04      
+- Apache 2.4.52     
+- php 8.1.2
+- phpMyAdmin 5.1.1  
+- PHP Unit 9.5.0    
+- MYSQL 8.0.31
+- PostreSQL 14.5    
+- SQLITE 3.37.2     
+- COMPOSER 2.4.4
+- WP-CLI 2.7.1      
+- NODEJS 18.12.1    
+- YARN 1.22.19
+- RUBY 3.0.2        
+- REDIS 6.0.16      
 - MailHog
 
 
@@ -35,7 +35,7 @@ Visit https://merlotbox.com for more information.
 `vagrant up`
 
 **Open browser**
-Visit: http://192.168.33.10 to access Merlot
+Visit: http://192.168.56.10 to access Merlot
 
 ---------------
 
@@ -45,8 +45,8 @@ There are 2 ways to connect to the databases in Merlot - via  web client or a de
 #### Via a web client
 MySQL and PostreSQL both have web clients built into Merlot.
 
-Visit http://192.168.33.10/phpmyadmin/ for MySQL
-Visit http://192.168.33.10/phppgadmin/ for PostreSQL
+Visit http://192.168.56.10/phpmyadmin/ for MySQL
+Visit http://192.168.56.10/phppgadmin/ for PostreSQL
 
 Login with  
 Username: root  
@@ -61,7 +61,7 @@ Whatever you use, select SSH as the connect method with the following settings
 
 | Setting (SSH)      | Value |
 | ---------------| ------------- |
-| SSH Host       | 192.168.33.10 |  
+| SSH Host       | 192.168.56.10 |  
 | SSH User       | vagrant      |
 | SSH Password   | vagrant      |
 | SSH Port       | 22            |
@@ -89,7 +89,7 @@ Whatever you use, select SSH as the connect method with the following settings
 
 ---------------
 ## Accessing Mailhog
-Visit http://192.168.33.10:8025
+Visit http://192.168.56.10:8025
 
 ---------------
 
