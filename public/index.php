@@ -109,7 +109,7 @@
       <a href="https://merlotbox.com/"><img src="https://merlotbox.com/merlot.png" alt="Merlot" class="logo"></a>
 
       <h2>A Simple LAMP Stack for Local Development with Vagrant</h2>
-      <p>v 3.0.0</p>
+      <p>v 4.0.0</p>
     </div>
   </div>
 
@@ -120,7 +120,7 @@
         <div class="card-header m_install_head bg-secondary">To install</div>
         <div class="card-body code_body">
           <p class="card-text code_row">
-<pre><code>git clone https://github.com/prefixstudio/merlot my-project
+<pre><code>git clone https://github.com/plutinolabs/merlot my-project
 cd my-project
 vagrant up</code></pre>
         </p>
@@ -139,28 +139,30 @@ vagrant up</code></pre>
 
       <table  class="table table_mer_info table-striped table-sm">
           <tr>
-            <td>Ubuntu 21.04</td>
-            <td>Apache 2.4.46</td>
-            <td>PHP 7.4.16</td>
-            <td>phpMyAdmin 4.9.7</td>
+            <td>Ubuntu 23.04</td>
+            <td>Apache 2.4.55</td>
+            <td>PHP 8.1.12</td>
+            <td>phpMyAdmin 5.2.1</td>
           </tr>
           <tr>
 
-            <td>MYSQL 8.0.26</td>
-            <td>PostreSQL 13.4</td>
-            <td>SQLITE 2.8.17</td>
-            <td>MongoDB 4.2.6</td>
+            <td>MYSQL 8.0.33</td>
+            <td>PostreSQL 15.2</td>
+            <td>SQLITE 3.40.1</td>
+            <td>COMPOSER 2.5.5</td>
           </tr>
           <tr>
-            <td>COMPOSER 2.1.9</td>
-            <td>WP-CLI 2.5.0</td>
-            <td>NODEJS 14.18.1</td>
-            <td>RUBY 2.7.2</td>
+            
+            <td>WP-CLI 2.7.1</td>
+            <td>NODEJS 18.16.0</td>
+            <td>RUBY 3.1.2</td>
+            <td>PHP Unit 9.5.28</td>
           </tr>
           <tr>
-            <td>PHP Unit 9.1.5</td>
-            <td>REDIS 6.0.11</td>
+            
+            <td>REDIS 7.0.8</td>
             <td>MailHog</td>
+            <td></td>
             <td></td>
           </tr>
         </table>
@@ -210,7 +212,7 @@ vagrant up</code></pre>
     <div class="card bg-light" >
       <div class="card-header">Open browser</div>
       <div class="card-body">
-        <p class="card-text"> Visit:<br><a href="http://192.168.33.10" target="_blank">http://192.168.33.10</a> </p>
+        <p class="card-text"> Visit:<br><a href="http://192.168.56.10" target="_blank">http://192.168.56.10</a> </p>
       </div>
     </div>
   </div>
@@ -244,10 +246,9 @@ vagrant up</code></pre>
   <div class="card-header">Via a web client</div>
   <div class="card-body">
     <p class="card-text">
-      MySQL and PostreSQL both have web clients built into Merlot.<br><br>
+      MySQL has web a client built into Merlot.<br><br>
 
-      Visit <a href="http://192.168.33.10/phpmyadmin/" target="_blank">http://192.168.33.10/phpmyadmin/</a> for MySQL<br>
-      Visit <a href="http://192.168.33.10/phppgadmin/" target="_blank">http://192.168.33.10/phppgadmin</a> for PostreSQL
+      Visit <a href="http://192.168.56.10/phpmyadmin/" target="_blank">http://192.168.56.10/phpmyadmin/</a> for MySQL
   </p>
   <p class="card-text">
     Login with<br>Username: root<br>Password: root
@@ -264,13 +265,13 @@ vagrant up</code></pre>
     <div class="card-header">Via a desktop client</div>
     <div class="card-body">
       <p class="card-text">
-You can use an application such as Sequel Pro or MySQl Workbench (for MySQL), DBeaver (for PostreSQL) or MongoDB Compass (for MongoDB) to connect to your database
+You can use an application such as Sequel Pro or MySQl Workbench (for MySQL), DBeaver (for PostreSQL) to connect to your database
       <p class="card-text">
         Whatever you use, select SSH as the connect method with the following settings
         <table class="table  table-striped table-sm msettings">
           <tr>
             <th>SSH Host</th>
-            <td>192.168.33.10</td>
+            <td>192.168.56.10</td>
           </tr>
           <tr>
             <th>SSH User</th>
@@ -328,17 +329,7 @@ You can use an application such as Sequel Pro or MySQl Workbench (for MySQL), DB
           </tr>
         </table>
 
-        <table class="table  table-striped table-sm msettings">
-          <tr>
-            <th>MongoDB Host</th>
-            <td>127.0.0.1</td>
-          </tr>
-          <tr>
-            <th>MongoDB Port</th>
-            <td>27017</td>
-          </tr>
-
-        </table>
+       
 
 
       </p>
@@ -359,7 +350,7 @@ You can use an application such as Sequel Pro or MySQl Workbench (for MySQL), DB
   <div class="card-header">Mailhog</div>
   <div class="card-body">
     <p class="card-text">
-      Visit <a href="http://192.168.33.10:8025" target="_blank">http://192.168.33.10:8025</a>
+      Visit <a href="http://192.168.56.10:8025" target="_blank">http://192.168.56.10:8025</a>
   </p>
   </div>
   </div>

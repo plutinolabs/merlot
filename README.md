@@ -6,20 +6,20 @@ Visit https://merlotbox.com for more information.
 
 ### Merlot includes the following components
 
-- Ubuntu 22.04      
-- Apache 2.4.52     
-- php 8.1.2
-- phpMyAdmin 5.1.1  
-- PHP Unit 9.5.0    
-- MYSQL 8.0.31
-- PostreSQL 14.5    
-- SQLITE 3.37.2     
-- COMPOSER 2.4.4
-- WP-CLI 2.7.1      
-- NODEJS 18.12.1    
+- Ubuntu 23.04
+- Apache 2.4.55
+- php 8.1.12
+- phpMyAdmin 5.2.1
+- PHP Unit 9.5.28
+- MYSQL 8.0.33
+- PostreSQL 15.2
+- SQLITE 3.40.1
+- COMPOSER 2.5.5
+- WP-CLI 2.7.1
+- NODEJS 18.16.0
 - YARN 1.22.19
-- RUBY 3.0.2        
-- REDIS 6.0.16      
+- RUBY 3.1.2
+- REDIS 7.0.8
 - MailHog
 
 
@@ -43,10 +43,9 @@ Visit: http://192.168.56.10 to access Merlot
 There are 2 ways to connect to the databases in Merlot - via  web client or a desktop client
 
 #### Via a web client
-MySQL and PostreSQL both have web clients built into Merlot.
+MySQL has a web client built into Merlot.
 
 Visit http://192.168.56.10/phpmyadmin/ for MySQL
-Visit http://192.168.56.10/phppgadmin/ for PostreSQL
 
 Login with  
 Username: root  
@@ -55,7 +54,7 @@ Password: root
 An empty database called **merlot** has already been created for you
 
 #### Via a desktop client
-You can use an application such as Sequel Pro or MySQl Workbench (for MySQL), DBeaver (for PostreSQL) or MongoDB Compass (for MongoDB) to connect to your database.
+You can use an application such as Sequel Pro or MySQl Workbench (for MySQL), DBeaver (for PostreSQL) to connect to your database.
 
 Whatever you use, select SSH as the connect method with the following settings
 
@@ -81,10 +80,6 @@ Whatever you use, select SSH as the connect method with the following settings
 | Database | merlot        |
 | Port  | 5432        |
 
-| Setting (MongoDB)    | Value |
-| ---------------| ------------- |
-| Host     | 127.0.0.1     |
-| Port     | 27017          |
 
 
 ---------------
